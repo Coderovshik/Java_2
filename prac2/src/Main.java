@@ -10,6 +10,7 @@ import java.util.stream.Stream;
  */
 public class Main {
     public static void main(String[] args) {
+        // список элементов типа Human
         List<Human> humans = new ArrayList<>();
         humans.add(
             new Human(
@@ -57,13 +58,14 @@ public class Main {
             )
         );
 
+        // создание объекта Stream
         Stream<Human> humanStream = humans.stream();
         String names = humanStream
-            .sorted(Collections.reverseOrder())
-            .filter(a -> a.age > 20)
-            .limit(3)
-            .map(a -> a.firstName)
-            .collect(Collectors.joining(" "));
+            .sorted(Collections.reverseOrder()) // сортировка в обратном порядке
+            .filter(a -> a.age > 20) // фильтрация по возрасту >20
+            .limit(3) // перввые три значения
+            .map(a -> a.firstName) 
+            .collect(Collectors.joining(" ")); // строка имен
 
         System.out.println(names);
     }

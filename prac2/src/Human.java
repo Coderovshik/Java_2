@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+// определение класса Human
 public class Human implements Comparable<Human> {
     int age;
     String firstName;
@@ -7,6 +8,7 @@ public class Human implements Comparable<Human> {
     LocalDate birthDate;
     int weight;
 
+    // конструктор
     public Human(int age, String firstName, String lastName, LocalDate birthDate, int weight) {
         this.age = age;
         this.firstName = firstName;
@@ -15,6 +17,7 @@ public class Human implements Comparable<Human> {
         this.weight = weight;
     }
 
+    // реализация метода интерфейса Comarable 
     @Override
     public int compareTo(Human o) {
         return firstName.compareTo(o.firstName);
