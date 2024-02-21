@@ -3,7 +3,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+// определение потокобезопасного множества
 public class ThreadSafeSet<T> implements Set<T> {
+    // внутреннее множество
+    // потокобезопасность достигается за счет слова synchronized
     HashSet<T> set;
 
     public ThreadSafeSet() {
@@ -11,78 +14,69 @@ public class ThreadSafeSet<T> implements Set<T> {
     }
 
     @Override
-    public int size() {
+    synchronized public int size() {
         return set.size();
     }
 
     @Override
-    public boolean isEmpty() {
+    synchronized public boolean isEmpty() {
         return set.isEmpty();
     }
 
     @Override
-    public boolean contains(Object o) {
+    synchronized public boolean contains(Object o) {
         return contains(o);
     }
 
     @Override
-    public Iterator<T> iterator() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'iterator'");
+    synchronized public Iterator<T> iterator() {
+        return set.iterator();
     }
 
     @Override
-    public Object[] toArray() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'toArray'");
+    synchronized public Object[] toArray() {
+        
+        return set.toArray();
     }
 
     @Override
-    public <T> T[] toArray(T[] a) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'toArray'");
+    synchronized public <T> T[] toArray(T[] a) {
+        return set.toArray(a);
     }
 
     @Override
     synchronized public boolean add(T e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'add'");
+        return set.add(e);
     }
 
     @Override
     synchronized public boolean remove(Object o) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remove'");
+        return set.remove(o);
     }
 
     @Override
-    public boolean containsAll(Collection<?> c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'containsAll'");
+    synchronized public boolean containsAll(Collection<?> c) {
+        return set.containsAll(c);
     }
 
     @Override
     synchronized public boolean addAll(Collection<? extends T> c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'addAll'");
+        return set.addAll(c);
     }
 
     @Override
     synchronized public boolean retainAll(Collection<?> c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'retainAll'");
+        return set.retainAll(c);
     }
 
     @Override
     synchronized public boolean removeAll(Collection<?> c) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'removeAll'");
+        return set.removeAll(c);
     }
 
     @Override
     synchronized public void clear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+        set.clear();
     }
     
 }
