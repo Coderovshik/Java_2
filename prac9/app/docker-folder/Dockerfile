@@ -1,4 +1,4 @@
-FROM openjdk:20
+FROM openjdk:21
 
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
