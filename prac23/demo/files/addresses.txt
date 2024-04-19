@@ -1,0 +1,5 @@
+[
+    Address(id=1, addressText=text1, zipCode=666666, building=null), 
+    Address(id=2, addressText=text2, zipCode=666665, building=null), 
+    Address(id=3, addressText=text3, zipCode=666664, building=null)
+]

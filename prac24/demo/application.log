@@ -1,0 +1,836 @@
+884  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 10604 (D:\jaba2\prac23\demo\build\classes\java\main started by peter in D:\jaba2\prac23\demo)
+897  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1815 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2655 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2667 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2669 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2670 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2744 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2744 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1789 ms
+2962 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3016 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3051 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3283 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3309 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3514 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6249a08d
+3516 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3548 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+4570 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4601 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4601 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+4603 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4603 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+4606 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4606 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+4608 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4609 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+4706 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5329 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5713 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a23136f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23a78d2e, org.springframework.security.web.context.SecurityContextHolderFilter@2f51b100, org.springframework.security.web.header.HeaderWriterFilter@2a5c115b, org.springframework.security.web.authentication.logout.LogoutFilter@dffcf1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6dcdc378, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@39f3285d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@20724c21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dba7721, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24381e4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c0cb9c2, org.springframework.security.web.access.ExceptionTranslationFilter@67b1c3af, org.springframework.security.web.access.intercept.AuthorizationFilter@7d7888a5]
+6028 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6051 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+6062 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 5.635 seconds (process running for 6.269)
+22354 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+22354 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+22357 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 3 ms
+36861 [http-nio-8080-exec-5] INFO  demo.aspects.LoggingAspect
+                – Parameters: Amogus
+222672 [http-nio-8080-exec-5] INFO  demo.aspects.LoggingAspect
+                – Parameters: User(id=null, name=user, password=password, roles=null)
+239482 [http-nio-8080-exec-10] INFO  demo.aspects.LoggingAspect
+                – Parameters: user
+239628 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
+                – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because the return value of "demo.entities.User.getRoles()" is null
+	at demo.config.UserDetailsImpl.getAuthorities(UserDetailsImpl.java:20)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.createSuccessAuthentication(AbstractUserDetailsAuthenticationProvider.java:197)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.createSuccessAuthentication(DaoAuthenticationProvider.java:132)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:168)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+303017 [http-nio-8080-exec-8] INFO  demo.aspects.LoggingAspect
+                – Parameters: User(id=null, name=user1, password=password1, roles=user)
+311388 [http-nio-8080-exec-9] INFO  demo.aspects.LoggingAspect
+                – Parameters: user1
+1042 [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 10520 (D:\jaba2\prac23\demo\build\classes\java\main started by peter in D:\jaba2\prac23\demo)
+1049 [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1847 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1925 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2663 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2679 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2679 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2679 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2745 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2745 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1636 ms
+2959 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3007 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3040 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3281 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3304 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3479 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63c99f7
+3481 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3511 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+4573 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4711 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5309 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5675 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63df2eb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49c72fb7, org.springframework.security.web.context.SecurityContextHolderFilter@5c7b504, org.springframework.security.web.header.HeaderWriterFilter@48b744fd, org.springframework.security.web.authentication.logout.LogoutFilter@785477e5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a3e458, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62536882, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@565983f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4619854a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c040c8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68024e57, org.springframework.security.web.access.ExceptionTranslationFilter@247d44b4, org.springframework.security.web.access.intercept.AuthorizationFilter@6908674b]
+5964 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5981 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5990 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 5.427 seconds (process running for 6.254)
+16399 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+16399 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+16399 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+697  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 19660 (D:\jaba2\prac23\demo\build\classes\java\main started by peter in D:\jaba2\prac23\demo)
+699  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1392 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2122 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2133 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2137 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2137 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2191 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2192 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1445 ms
+2374 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2425 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2454 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2675 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2706 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2858 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37d6dddc
+2859 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2885 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3736 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3769 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3769 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+3772 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3772 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+3774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+3777 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3777 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+3842 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4360 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4674 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c6653e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@435e224d, org.springframework.security.web.context.SecurityContextHolderFilter@62536882, org.springframework.security.web.header.HeaderWriterFilter@6f627a1a, org.springframework.security.web.authentication.logout.LogoutFilter@a3e458, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@182469d0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@50331591, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@788fa91f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27f4761b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52df6d0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dd7af2f, org.springframework.security.web.access.ExceptionTranslationFilter@c040c8d, org.springframework.security.web.access.intercept.AuthorizationFilter@2f83467]
+4921 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4936 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+4945 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 4.591 seconds (process running for 5.117)
+18905 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+18906 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+18907 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+165417 [http-nio-8080-exec-6] INFO  demo.aspects.LoggingAspect
+                – Parameters: User(id=null, name=user1, password=password1, roles=user)
+183007 [http-nio-8080-exec-2] INFO  demo.aspects.LoggingAspect
+                – Parameters: user1
+689  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 17540 (D:\jaba2\prac24\demo\build\classes\java\main started by peter in D:\jaba2\prac24\demo)
+692  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1399 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2130 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2142 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2145 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2145 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2204 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2204 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1467 ms
+2397 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2461 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2501 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2719 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2743 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2916 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@382d549a
+2917 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2950 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3827 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4551 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4651 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+4881 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e8eea59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fb379e4, org.springframework.security.web.context.SecurityContextHolderFilter@4df54c1, org.springframework.security.web.header.HeaderWriterFilter@5c141c7b, org.springframework.security.web.authentication.logout.LogoutFilter@3903cfc9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76ccde41, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6908674b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f9d8285, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c950fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41962299, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67b1c3af, org.springframework.security.web.access.ExceptionTranslationFilter@7bf997e0, org.springframework.security.web.access.intercept.AuthorizationFilter@58df2864]
+5138 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5163 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 4.816 seconds (process running for 5.346)
+9456 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+9456 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+9457 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+39532 [http-nio-8080-exec-6] INFO  demo.aspects.LoggingAspect
+                – Parameters: User(id=null, name=user1, password=password1, roles=user)
+49119 [http-nio-8080-exec-8] INFO  demo.aspects.LoggingAspect
+                – Parameters: user1
+391  [main] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+815  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 9440 (D:\jaba2\prac24\demo\build\classes\java\main started by peter in D:\jaba2\prac24\demo)
+817  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1700 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1792 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2585 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2598 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2601 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2601 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2689 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2690 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1817 ms
+2904 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2966 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2998 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3241 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3268 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3471 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1846ad0f
+3473 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3518 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+4585 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4612 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4612 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+4615 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4615 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+4617 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4617 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+4619 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4620 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+4729 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5327 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5446 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+5750 [main] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3816efab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d6e09f0, org.springframework.security.web.context.SecurityContextHolderFilter@443b9ebb, org.springframework.security.web.header.HeaderWriterFilter@3507200d, org.springframework.security.web.authentication.logout.LogoutFilter@5ec25b61, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@af04d6d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f650dae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@257da215, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d98ce13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e86b2d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aa461, org.springframework.security.web.access.ExceptionTranslationFilter@3f31cf8f, org.springframework.security.web.access.intercept.AuthorizationFilter@48cbb4c5]
+6055 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6074 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+6082 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 5.682 seconds (process running for 6.315)
+361  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+422  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+440  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+448  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+602  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+734  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1247 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 9232 (started by peter in D:\jaba2\prac24\demo)
+1248 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+2349 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2444 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+3511 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3599 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3658 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3801 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3836 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4075 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1aef7428
+4079 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4129 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5202 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5349 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6384 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6571 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+6954 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15932faf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7066c00a, org.springframework.security.web.context.SecurityContextHolderFilter@7d440378, org.springframework.security.web.header.HeaderWriterFilter@42014a, org.springframework.security.web.authentication.logout.LogoutFilter@36c45b54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22cf6c9c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3003d288, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2914f916, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7597ae32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@615f61ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2140de63, org.springframework.security.web.access.ExceptionTranslationFilter@132f1d85, org.springframework.security.web.access.intercept.AuthorizationFilter@387bbd7a]
+7517 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.604 seconds (process running for 10.856)
+7573 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7623 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7634 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+477  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+568  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+579  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+589  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+847  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+1009 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1573 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 19040 (started by peter in D:\jaba2\prac24\demo)
+1575 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+2691 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2797 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+3813 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3909 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3963 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4098 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4127 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4345 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e295f7f
+4347 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4388 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5442 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5468 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5469 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+5471 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5472 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+5474 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5475 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+5477 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5477 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+5565 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6511 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6709 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+7143 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c8d9ac9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b57587e, org.springframework.security.web.context.SecurityContextHolderFilter@36c45b54, org.springframework.security.web.header.HeaderWriterFilter@31f5580b, org.springframework.security.web.authentication.logout.LogoutFilter@29aa29f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2aea7775, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22cf6c9c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ffc9be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e5d10fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5da08e9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4005e63a, org.springframework.security.web.access.ExceptionTranslationFilter@438a2337, org.springframework.security.web.access.intercept.AuthorizationFilter@1e5f3c4a]
+7700 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.483 seconds (process running for 11.054)
+7766 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7795 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7808 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+477  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+510  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+571  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+572  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+581  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+818  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+961  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1545 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 16496 (started by peter in D:\jaba2\prac24\demo)
+1547 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+2662 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2762 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+3818 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3926 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3987 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4158 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4186 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4430 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e8698c0
+4433 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4468 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5457 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5484 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5484 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+5486 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5486 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+5489 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5490 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+5492 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5492 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+5579 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6566 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6760 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+7217 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e62d757, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@597f2d3f, org.springframework.security.web.context.SecurityContextHolderFilter@3af17313, org.springframework.security.web.header.HeaderWriterFilter@1f7653ae, org.springframework.security.web.authentication.logout.LogoutFilter@7d440378, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3003d288, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@56f8ab05, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7746330a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30ffc3c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76b8b6a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3de4f936, org.springframework.security.web.access.ExceptionTranslationFilter@6b5fdbd0, org.springframework.security.web.access.intercept.AuthorizationFilter@63069995]
+7829 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.667 seconds (process running for 11.308)
+7891 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7942 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7959 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+431  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+508  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+510  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+519  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+756  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+937  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1504 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 4724 (started by peter in D:\jaba2\prac24\demo)
+1505 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+2502 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2596 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+3529 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3736 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3807 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4002 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4027 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4276 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4da9da6c
+4279 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4317 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5370 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5399 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5399 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+5402 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5402 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+5404 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5404 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+5407 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5407 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+5484 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6379 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6575 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+6924 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c32908c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@588b02a0, org.springframework.security.web.context.SecurityContextHolderFilter@123fd460, org.springframework.security.web.header.HeaderWriterFilter@688884e, org.springframework.security.web.authentication.logout.LogoutFilter@466fd19b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48d6248d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@11c68269, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2100b770, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1227ea21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@511ba9c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@349469db, org.springframework.security.web.access.ExceptionTranslationFilter@6960e7a6, org.springframework.security.web.access.intercept.AuthorizationFilter@2a1fce44]
+7488 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.336 seconds (process running for 10.729)
+7553 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7586 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7597 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+500  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+594  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+596  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+607  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+771  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+772  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+779  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – create building Building(id=null, creationDate=00.00.0000, type=office, addresses=null)
+803  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings sorted by attribute: type
+1047 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+1242 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1925 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 23532 (started by peter in D:\jaba2\prac24\demo)
+1926 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+3004 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3103 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+4155 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4254 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+4316 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4484 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4528 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4767 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@240291d9
+4770 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4817 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5897 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5921 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5921 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+5924 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5924 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+5926 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5927 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+5929 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5930 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+6017 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7103 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7282 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+7726 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@551fefe8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6affa355, org.springframework.security.web.context.SecurityContextHolderFilter@6efd83ac, org.springframework.security.web.header.HeaderWriterFilter@f7e004d, org.springframework.security.web.authentication.logout.LogoutFilter@48149568, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cd886b7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@76958827, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@621a7d83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21acc86a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@443819d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58de1da2, org.springframework.security.web.access.ExceptionTranslationFilter@187c8f96, org.springframework.security.web.access.intercept.AuthorizationFilter@2d7b117]
+8265 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.712 seconds (process running for 11.593)
+8317 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+8347 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8359 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+373  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+387  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+424  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – create building Building(id=null, creationDate=00.00.0000, type=office, addresses=null)
+454  [Test worker] INFO  demo.services.BuildingServiceImpl
+                – get all buildings sorted by attribute: type
+599  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+626  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+626  [Test worker] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+631  [Test worker] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=222222, building=null)
+792  [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                – Could not detect default configuration classes for test class [demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+931  [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper
+                – Found @SpringBootConfiguration demo.DemoApplication for test class demo.DemoApplicationTests
+1508 [Test worker] INFO  demo.DemoApplicationTests
+                – Starting DemoApplicationTests using Java 21.0.2 with PID 12848 (started by peter in D:\jaba2\prac24\demo)
+1510 [Test worker] INFO  demo.DemoApplicationTests
+                – No active profile set, falling back to 1 default profile: "default"
+2569 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2665 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+3634 [Test worker] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3829 [Test worker] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+3885 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+4091 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+4122 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4368 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c9512c6
+4373 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4421 [Test worker] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+5479 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+5505 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5505 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+5508 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5509 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+5511 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5511 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+5514 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+5514 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "users" does not exist, skipping
+5595 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6487 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6658 [Test worker] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page: class path resource [static/index.html]
+7098 [Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain
+                – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6296c184, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ea95f79, org.springframework.security.web.context.SecurityContextHolderFilter@1f1b69bb, org.springframework.security.web.header.HeaderWriterFilter@3020f22, org.springframework.security.web.authentication.logout.LogoutFilter@76958827, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@581da9e6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@187c8f96, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@bce93d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@616d9a6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16263fb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a6ab328, org.springframework.security.web.access.ExceptionTranslationFilter@23a0c7f3, org.springframework.security.web.access.intercept.AuthorizationFilter@1469015e]
+7665 [Test worker] INFO  demo.DemoApplicationTests
+                – Started DemoApplicationTests in 6.485 seconds (process running for 10.956)
+7721 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7767 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7775 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

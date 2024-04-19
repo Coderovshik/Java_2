@@ -1,0 +1,472 @@
+856  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 15212 (D:\jaba2\prac19\demo\build\classes\java\main started by peter in D:\jaba2\prac19\demo)
+858  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1745 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1823 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2452 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2455 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2455 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2534 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2535 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1621 ms
+2726 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2778 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2813 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3069 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3096 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3299 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b9aeedb
+3300 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3332 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+4377 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4403 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4403 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+4406 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4406 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+4409 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4409 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+4465 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4792 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5131 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5151 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5160 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 4.728 seconds (process running for 5.376)
+100541 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+100541 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+100549 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+100609 [http-nio-8080-exec-3] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+155516 [http-nio-8080-exec-4] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+917  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 22800 (D:\jaba2\prac19\demo\build\classes\java\main started by peter in D:\jaba2\prac19\demo)
+919  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2436 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2449 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2451 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2452 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2529 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2529 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1561 ms
+2720 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2772 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2805 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+3069 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+3095 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3313 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1570cad0
+3314 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3348 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+4399 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+4422 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4423 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+4425 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4425 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+4428 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+4428 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+4492 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4875 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5240 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5259 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+5268 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 4.773 seconds (process running for 5.531)
+14757 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+14757 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+14761 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 4 ms
+14819 [http-nio-8080-exec-3] INFO  demo.aspects.LoggingAspect
+                – Parameters: zipCode
+14819 [http-nio-8080-exec-3] INFO  demo.services.AddressServiceImpl
+                – get all addresses sorted by attribute: zipCode
+691  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 1168 (D:\jaba2\prac22\demo\build\classes\java\main started by peter in D:\jaba2\prac22\demo)
+693  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+1922 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+1933 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1936 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1936 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+1991 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1252 ms
+2146 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2187 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2220 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2418 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2441 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2591 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63187d63
+2593 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2622 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3436 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3458 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3458 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – relation "address" does not exist, skipping
+3461 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3462 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "address" does not exist, skipping
+3464 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – SQL Warning Code: 0, SQLState: 00000
+3465 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper
+                – table "building" does not exist, skipping
+3514 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3911 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4215 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4231 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+4238 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 3.887 seconds (process running for 4.436)
+744  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 19800 (D:\jaba2\prac22\demo\build\classes\java\main started by peter in D:\jaba2\prac22\demo)
+746  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1374 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1437 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+1991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+2002 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2004 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2004 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2058 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2058 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1265 ms
+2213 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2254 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2292 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2496 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2517 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2665 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e9a10cd
+2666 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2695 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3575 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3655 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4049 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4358 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4373 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+4380 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 3.995 seconds (process running for 4.63)
+694  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 11008 (D:\jaba2\prac22\demo\build\classes\java\main started by peter in D:\jaba2\prac22\demo)
+696  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1307 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1370 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+1929 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+1939 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1941 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1941 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+1998 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1998 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1257 ms
+2153 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2200 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2227 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2428 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2449 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2601 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@720a1fd0
+2603 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2633 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3437 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3518 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3911 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4228 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4243 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+4253 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 3.907 seconds (process running for 4.418)
+4259 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+4263 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+4263 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+4382 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+4382 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+9405 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+9406 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+9406 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+9414 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+9414 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+14433 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+14434 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+14436 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+14444 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+14444 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+708  [main] INFO  demo.DemoApplication
+                – Starting DemoApplication using Java 21.0.2 with PID 16716 (D:\jaba2\prac22\demo\build\classes\java\main started by peter in D:\jaba2\prac22\demo)
+709  [main] INFO  demo.DemoApplication
+                – No active profile set, falling back to 1 default profile: "default"
+1354 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1416 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+1984 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port 8080 (http)
+1994 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1996 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1996 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.19]
+2065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2066 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1310 ms
+2243 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2296 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.4.4.Final
+2328 [main] INFO  o.h.c.i.RegionFactoryInitiator
+                – HHH000026: Second-level cache disabled
+2564 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo
+                – No LoadTimeWeaver setup: ignoring JPA class transformer
+2586 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2736 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d28c214
+2737 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2775 [main] WARN  org.hibernate.orm.deprecation
+                – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+3671 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+3780 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4486 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4847 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+4863 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port 8080 (http) with context path ''
+4873 [main] INFO  demo.DemoApplication
+                – Started DemoApplication in 4.51 seconds (process running for 5.055)
+4881 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+4882 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+4883 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+5026 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+5027 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+10047 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+10048 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+10048 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+10057 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+10057 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+15068 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+15068 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+15069 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+15077 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+15077 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+20090 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+20092 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+20093 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+20101 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+20101 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+21179 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+21180 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+21181 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+21284 [http-nio-8080-exec-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: Address(id=null, addressText=text1, zipCode=666666, building=null)
+21285 [http-nio-8080-exec-1] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text1, zipCode=666666, building=null)
+25112 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+25114 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+25114 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+25126 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+25126 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+26768 [http-nio-8080-exec-9] INFO  demo.aspects.LoggingAspect
+                – Parameters: Address(id=null, addressText=text2, zipCode=666665, building=null)
+26768 [http-nio-8080-exec-9] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text2, zipCode=666665, building=null)
+30143 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+30144 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+30144 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+30155 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+30155 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+32000 [http-nio-8080-exec-4] INFO  demo.aspects.LoggingAspect
+                – Parameters: Address(id=null, addressText=text3, zipCode=666664, building=null)
+32000 [http-nio-8080-exec-4] INFO  demo.services.AddressServiceImpl
+                – create address Address(id=null, addressText=text3, zipCode=666664, building=null)
+35167 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+35168 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+35168 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+35178 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+35178 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
+40195 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+40196 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+40196 [scheduling-1] INFO  demo.services.AddressServiceImpl
+                – get all addresses
+40205 [scheduling-1] INFO  demo.aspects.LoggingAspect
+                – Parameters: {}
+40206 [scheduling-1] INFO  demo.services.BuildingServiceImpl
+                – get all buildings
